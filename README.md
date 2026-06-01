@@ -7,6 +7,21 @@ Object-Oriented Programming (OOP).
 ## 📚 What I'm Learning
 
 - Dart Basics (Variables, Data Types, Operators)
+    - <details>
+        <summary>Dart Basics Rules</summary>
+    ```dart
+             // 1. Every program must start with main
+             void main() {
+               
+             }
+
+             // 2. Every line must end with ;
+             print("Hello");
+
+             // 3. File extension
+             // filename.dart
+    ```
+    </details>
 - Control Flow (If/Else, Loops)
 - Functions
 - OOP (Classes, Objects, Inheritance)
