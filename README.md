@@ -1,10 +1,12 @@
 # 🎯 Dart Learning Journey
 
-A structured repository to learn Dart programming language from scratch, covering basics to Object-Oriented Programming (OOP).
+A structured repository to learn Dart programming 
+language from scratch, covering basics to 
+Object-Oriented Programming (OOP).
 
 ## 📚 What I'm Learning
 
-- Dart Basics (Variables, Data Types, Operators)
+- Dart Basics (Variables, Data Types, Null Safety, Operators)
   - <details>
      <summary>Dart Basics Rules</summary>
 
@@ -28,7 +30,7 @@ A structured repository to learn Dart programming language from scratch, coverin
 
     ```dart
     void main() {
-      String name = "mahmoud";
+      String name = "Mahmoud";
       print(name);
 
       int age = 31;
@@ -52,41 +54,45 @@ A structured repository to learn Dart programming language from scratch, coverin
     ```
 
     </details>
+
   - <details>
     <summary>Ways to Declare Variables</summary>
 
     ```dart
-    void main(){
-    // dirct type variable
+    void main() {
+      // Direct type variable
       String name = "Mahmoud";
       int age = 31;
       print(name);
       print(age);
 
-    // const type variable
-      var name = "Mahmoud";
-      // not correct 
-      // name = 25
-      var age = 31;
+      // var - type cannot change once assigned
+      var city = "Cairo";
+      var score = 100;
+      print(city);
+      print(score);
 
-    // dynamic type variable
+      // dynamic - type can change overtime
       dynamic message = "Hello";
       message = 25;
       message = true;
+      print(message);
 
-    // final value once not change
-      final name = "Mahmoud";
-      // not correct
-      // name = "ahmed";
-    //value assign time run
-      const pi = 3,14;
-      const area = pi * 12 * 12;
+      // final - assigned once at runtime
+      final country = "Egypt";
+      print(country);
+
+      // const - assigned once at compile time
+      const double pi = 3.14;
+      const double area = pi * 12 * 12;
+      print(area);
     }
     ```
 
   </details>
+
   - <details>
-    <summary>Null safety</summary>
+    <summary>Null Safety</summary>
 
     ```dart
     void main(){
@@ -111,11 +117,11 @@ A structured repository to learn Dart programming language from scratch, coverin
       print(name6!.length); // Output: 7
 
       String? name7 = null;
-      name7 ??= "Guest"; // if null asign value
+      name7 ??= "Guest"; // if null assign value
       print(name7);      // Output: Guest
 
       String? name8 = "Mahmoud";
-      name8 ??= "Guest"; // not null not asign
+      name8 ??= "Guest"; // not null not assign
       print(name8);      // Output: Mahmoud
     }
     ```
@@ -123,12 +129,6 @@ A structured repository to learn Dart programming language from scratch, coverin
   </details>  
 
 - Control Flow (If/Else, Loops)
-  - <details>
-    <summary>if condition</summary>
-
-    > if
-
-    </details>
 - Functions
 - OOP (Classes, Objects, Inheritance)
 
@@ -141,12 +141,13 @@ each commit = one lesson
 ## 🛠️ Tools
 
 - Language : Dart
-- IDE : VS Code
+- IDE : Neovim
 - Resources : Softagi Software Solutions
 
 ## 📈 Progress
 
-- [ ] Dart Basics
+- [x] Dart Basics
+- [x] Null Safety
 - [ ] Control Flow
 - [ ] Functions
 - [ ] OOP

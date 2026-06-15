@@ -1,29 +1,43 @@
 
 void main() {
   // 1. Direct type
-  String name = "Mahmoud";
-  int age = 31;
-  print(name);
-  print(age);
+  // 1. String
+  String restaurantName = "Koshary Abo Tarq";
+  String orderStatus = "Out for delivery";
+  
+  // 2. Integer 
+  // Number of items in the cart
+  int itemCount = 3;
+  // Estimated delivery time in minutes
+  int deliveryTime = 25;
 
-  // 2. var
-  var city = "Cairo";
-  var score = 100;
-  print(city);
-  print(score);
+  // 3. Double
+  // Product price
+  double productPrice = 149.99;
+  // Delivery fee
+  double deliveryFee = 12.50;
 
-  // 3. dynamic
-  dynamic message = "Hello";
-  message = 25;
-  message = true;
-  print(message);
+  // 4. Boolean
+  // Is the restaurant open
+  bool isOpen = true;
 
-  // 4. final
-  final country = "Egypt";
-  print(country);
+  // Has the user paid
+  bool isPaid = false;
 
-  // 5. const
-  const pi = 3.14;
-  const area = pi * 12 * 12;
-  print(area);
+
+  // 2. var (Dart automatically detects the type)
+  var totalFollowers = 8200;    // detected as int
+  var userName = "mahmoud_dev"; // detected as String
+  
+  // Print everything
+  print("Restaurant: $restaurantName");
+  print("Status: $orderStatus");
+  print("Items: $itemCount");
+  print("Delivery: $deliveryTime mins");
+  print("Price: $productPrice EGP");
+  print("Delivery Fee: $deliveryFee EGP");
+  print("Open: $isOpen");
+  print("Piad: $isPaid");
+  print("Followers: $totalFollowers");
+  print("Username: $userName");
 }
