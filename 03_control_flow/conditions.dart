@@ -36,8 +36,18 @@ void main(){
   } else {
     print("Please log in to continue");
   }
-  //
-  if (true) {
-    print('it is true');
+  // 4. logical operators in conditions
+  int followerCount = 12000;
+  double engagementRate = 0.08;
+  
+  if (followerCount >= 10000 && engagementRate >= 0.05) {
+    print("you qualify for the creator program!");
+  } else {
+    print("keep growing to qualify.");
   }
+
+  // Ternary operator
+  bool inStock = false;
+  String stockStatus = inStock ? "In stock" : "Out of stock";
+  print(stockStatus);
 }
